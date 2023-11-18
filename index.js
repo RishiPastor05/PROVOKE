@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, "/frontend/build")));
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "/frontend/build/index.html"));
 });
-
+console.log("gg");
 
 app.listen(PORT, ()=>{
     console.log(`Server is listening at http://localhost:${PORT}`);
